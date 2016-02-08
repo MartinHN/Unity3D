@@ -410,8 +410,8 @@ using System.IO;
 
 	[MonoPInvokeCallback (typeof (OnRetireServerDelegate))]
 	public static void OnRetireServer(string appName, string name,  string uuid){
-		string realAppName = "";
-		string realName = "";
+		string realAppName = appName;
+		string realName = name;
 
 //		UnityEngine.Debug.Log("retiring the server with the appName: " + appName + ", name: " + name + ", uuid: " + uuid);
 
